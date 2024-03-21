@@ -7,7 +7,7 @@ import { useState } from "react";
 
 export default function Home() {
 
-  const [select, setSelect]=useState(false);
+  const [select, setSelect]=useState(true);
 
   const handleSelectDiscussion=()=>{
     setSelect(true)

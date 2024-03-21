@@ -27,8 +27,8 @@ const DiscussionForumItem:React.FC<DiscussionForumItemProps>=({post})=>{
                 <div className="text-sm lg:text-justify">{post.description}</div>
                 <div className="flex text-gray-600 text-xs md:text-base flex-row justify-between gap-1 md:gap-2">
                     <PostData count={post.likes} icon={AiFillLike} />
-                    <PostData count={post.likes} icon={MdViewQuilt} />
-                    <PostData count={post.likes} icon={MdComment} title="Comments" />
+                    <PostData count={post.views} icon={MdViewQuilt} />
+                    <PostData count={post.comments} icon={MdComment} title="Comments" />
                     <PostData icon={MdShare} title="Share" />
                 </div>
             </div>

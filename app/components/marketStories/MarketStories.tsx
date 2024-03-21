@@ -12,7 +12,7 @@ const MarketStories:React.FC<MarketStoriesProps>=({src, title, description})=>{
             <div className="aspect-square overflow-hidden relative  w-full">
                 <Image src={src} alt="story image"  fill className="object-contain" />
             </div>
-            <div className="text-slate-800 text-lg md:text-xl font-semibold">
+            <div className="text-slate-800 text-nowrap md:text-wrap text-lg md:text-xl font-semibold">
                 {title}
             </div>
             <div className="p-1 text-justify text-sm md:text-sm mx-1">

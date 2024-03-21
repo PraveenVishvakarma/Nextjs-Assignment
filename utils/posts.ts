@@ -14,7 +14,7 @@ export const posts=[
         userPic:"https://img.freepik.com/premium-vector/user-profile-icon-flat-style-member-avatar-vector-illustration-isolated-background-human-permission-sign-business-concept_157943-15752.jpg?size=338&ext=jpg&ga=GA1.1.735520172.1710806400&semt=ais",
         likes:1000,
         views:3000,
-        comments:200,
+        comments:2000,
         sector:"sector 2",
     },
     {
