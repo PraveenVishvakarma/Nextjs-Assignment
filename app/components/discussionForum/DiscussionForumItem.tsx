@@ -17,15 +17,15 @@ interface DiscussionForumItemProps{
 
 const DiscussionForumItem:React.FC<DiscussionForumItemProps>=({post})=>{
     return(
-        <div className="flex flex-row justify-center gap-1 overflow-auto">
-            <div className="pl-2"><Avatar src={""} /></div>
-            <div className="flex flex-col gap-1 ">
+        <div className="flex flex-row gap-0 md:gap-1 justify-between overflow-auto p-4">
+            <div className="pl-2 mr-1 md:mr-0"><Avatar src={""} /></div>
+            <div className="flex flex-col gap-1">
                 <div className="flex items-center text-center gap-3">
                     <div className="md:text-lg font-semibold">{post.userId}</div>
                     <div className="bg-blue-700 text-sm md:text-base rounded-xl px-2">{post.sector}</div>
                 </div>
                 <div className="text-sm lg:text-justify">{post.description}</div>
-                <div className="flex text-gray-600 flex-row justify-between gap-2">
+                <div className="flex text-gray-600 text-xs md:text-base flex-row justify-between gap-1 md:gap-2">
                     <PostData count={post.likes} icon={AiFillLike} />
                     <PostData count={post.likes} icon={MdViewQuilt} />
                     <PostData count={post.likes} icon={MdComment} title="Comments" />
